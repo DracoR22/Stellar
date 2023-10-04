@@ -5,6 +5,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { ToastContainer } from 'react-toastify'
 
 import 'react-toastify/dist/ReactToastify.css';
+import { ConfettiProvider } from '@/components/providers/ConfettiProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,8 @@ export default function RootLayout({
     <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
-      <ToastContainer theme="light" autoClose={3000}/>
+        <ConfettiProvider/>
+        <ToastContainer theme="light" autoClose={3000}/>
         {children}
       </body>
     </html>

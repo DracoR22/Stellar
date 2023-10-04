@@ -1,4 +1,4 @@
-import NavbarRoutes from "@/components/NavbarRoutes"
+import { NavbarRoutes } from "@/components/NavbarRoutes"
 import MobileSidebar from "./MobileSidebar"
 
 const Navbar = () => {
